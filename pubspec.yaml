@@ -36,6 +36,27 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
 
+  intl: ^0.19.0
+
+  # https://github.com/flutterchina/dio 网络库
+  dio: ^5.1.1
+
+  # 状态管理框架，还用到它的路由
+  get: ^4.6.5
+
+  # Logger https://github.com/leisim/logger
+  logger: ^2.2.0
+
+  # JSON转Model https://flutter.cn/docs/development/data-and-backend/json
+  json_annotation: ^4.8.1
+
+  shared_preferences: ^2.2.1
+
+  # 获取版本号等信息
+  package_info_plus: ^6.0.0
+
+  fluttertoast: ^8.2.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +67,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
+  # JSON转Model
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,9 +84,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+#    - assets/
+#    - assets/images/
+#    - assets/images/2.0x/
+#    - assets/images/3.0x/
+    - assets/images/loading_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
